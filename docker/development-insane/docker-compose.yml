@@ -537,7 +537,7 @@ services:
       retries: 3
   mysql:
     restart: always
-    image: mysql:9.7.2@sha256:30a0abfa7b502a496e12339b54cd07aaa70363396dc4b8e8a72a92804a505cd6
+    image: mysql:9.7.2@sha256:e2fa358a74ac81148e7e27d9433e4c0ab62133de8ea4428b4f39a51a4ba7d07f
     command: [mysqld, --character-set-server=utf8mb4]
     ports:
     - 8220:3306
@@ -554,7 +554,7 @@ services:
       retries: 3
   mysql-old:
     restart: always
-    image: mysql:8.4.11@sha256:0744ee5ef89ce6ccfa13de3e579fe6b9e27f93dd70da9c06d2c908b1b193fb8d
+    image: mysql:8.4.11@sha256:0f51e63e537a1f176423fa03ef559aabe6fa4372a53160a44bc7e75da7d15364
     command: [mysqld, --character-set-server=utf8mb4]
     environment:
       MYSQL_ROOT_PASSWORD: root
