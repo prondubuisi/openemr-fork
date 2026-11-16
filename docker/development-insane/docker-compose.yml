@@ -569,7 +569,7 @@ services:
       retries: 3
   phpmyadmin:
     restart: always
-    image: phpmyadmin:5.2.3@sha256:9e915766488a0f603183367a4b51f5db6309ea801f3eaa25138a83815772b14f
+    image: phpmyadmin:5.2.3@sha256:e4b3eb5305cd42d21512bb55def2bab52625d56df927ad4ee1864a9354c84d40
     ports:
     - 8200:80
     environment:
